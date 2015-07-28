@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html ng-app="app">
+<head lang="en">
+    <script src="/vendors/angular/angular.min.js" type="text/javascript"></script>
+    <script src="/assets/scripts/app.min.js" type="text/javascript"></script>
+    <meta charset="UTF-8">
+    <title>MEAN Stack</title>
+</head>
+<body>
+<div ng-controller="IndexController">
+
+    <form novalidate>
+        <input type="submit" ng-click="getBalance()" value="Get balance"/>
+    </form>
+
+
+    <h4>balance sheet</h4>
+   <ul>
+       <li ng-repeat="balance in balances">{{balance}}</li>
+   </ul>
+</div>
+</body>
+</html>
